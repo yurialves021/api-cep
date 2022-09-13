@@ -18,22 +18,22 @@
 <body>
 
     <main class="principal">
-    
+
         <form class="principal__formulario" id="formulario" target="_blank">
-            
+
             <h3 class="principal__subtitulo">Endereço</h3>
 
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="cep">CEP</label>
                 <input name="cep" id="cep" class="campo__escrita" required />
-                <div id="erro"></div>
+                <div id="erro" class="erro__texto"></div>
             </div>
 
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="endereco">Endereço</label>
                 <input name="endereco" id="endereco" class="campo__escrita" required />
             </div>
-        
+
             <div class="formulario__campo">
                 <label class="campo__etiqueta" for="bairro">Bairro</label>
                 <input name="bairro" id="bairro" class="campo__escrita" required />
@@ -79,14 +79,11 @@
                 </div>
 
             </div>
-
-
-           
         </form>
     </main>
-
-   
-
+    
+    <script src="app/viaCep.js"></script>
+    <script src="app/preencheForms.js"></script>
 </body>
 
 </html>
